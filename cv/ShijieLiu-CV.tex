@@ -1,0 +1,42 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.4cm, footskip=.5cm}
+
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{Shijie}{Liu}
+\position{Doctoral Researcher{\enskip\cdotp\enskip}Computational Fluid Dynamics}
+\address{Chongqing University, Chongqing, China}
+
+\mobile{(+86) 151-3169-1003}
+\email{20241601053@stu.cqu.edu.cn}
+\homepage{shijieliu.com}
+\github{Jason-S-Liu}
+\orcid{0009-0000-5048-2536}
+\extrainfo{Research: bluff-body aerodynamics, particle-laden flows, reduced-order modeling}
+
+\quote{Mechanism-driven CFD for particle-laden bluff-body wakes.}
+
+\begin{document}
+
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {Shijie Liu~~~\cdotp~~~Curriculum Vitae}
+  {\thepage}
+
+\input{sections/education.tex}
+\input{sections/research.tex}
+\input{sections/projects.tex}
+\input{sections/skills.tex}
+\input{sections/honors.tex}
+\input{sections/activities.tex}
+\input{sections/publications.tex}
+
+\end{document}

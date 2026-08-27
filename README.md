@@ -8,6 +8,8 @@ https://github.com/jonbarron/jonbarron.github.io
 
 - `index.html`: profile text, links, news, papers, projects, teaching, service
 - `stylesheet.css`: visual style inherited from the Jon Barron template
+- `cv/`: Awesome-CV source for your CV
+- `data/ShijieLiu-CV.pdf`: the PDF linked from the homepage
 - `images/ShijieLiu.svg`: replace with your real profile photo, for example `images/ShijieLiu.jpg`
 - `images/particle_wake.png`: replace or add paper thumbnails
 - `data/`: put your CV PDF, bio text, BibTeX files, and other downloadable files here, then update the links in `index.html`
