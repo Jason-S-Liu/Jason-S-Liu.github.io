@@ -1,35 +1,26 @@
 # shijieliu.com
 
-A compact academic personal homepage for Shijie Liu, inspired by lightweight research websites such as Deepak Pathak, Jon Barron, and Tairan He.
+This is a GitHub Pages-style academic homepage for Shijie Liu, adapted from Jon Barron's public website source code:
 
-## Edit Content
+https://github.com/jonbarron/jonbarron.github.io
 
-Most homepage text is in `site-data.js`:
+## Files to Edit
 
-- Profile text and links: `name`, `role`, `affiliation`, `bio`, `links`
-- Updates: `news`
-- Research cards: `research`
-- Publication-style entries: `publications`
-- Experience and skills: `experience`
+- `index.html`: profile text, links, news, papers, projects, teaching, service
+- `stylesheet.css`: visual style inherited from the Jon Barron template
+- `images/ShijieLiu.svg`: replace with your real profile photo, for example `images/ShijieLiu.jpg`
+- `images/particle_wake.png`: replace or add paper thumbnails
+- `data/`: put your CV PDF, bio text, BibTeX files, and other downloadable files here, then update the links in `index.html`
+- `CNAME`: custom domain, currently `shijieliu.com`
 
-Replace `assets/profile-placeholder.svg` with a real photo when ready. Keep the filename or update the `<img>` path in `index.html`.
+## GitHub Pages Setup
 
-## Preview Locally
+1. Create a GitHub repository. The easiest personal-site option is `YOUR_USERNAME.github.io`.
+2. Push these files to the repository's `main` branch.
+3. In GitHub, open Settings -> Pages and publish from the `main` branch root.
+4. In Settings -> Pages -> Custom domain, enter `shijieliu.com`.
+5. Set your domain DNS records as GitHub Pages instructs.
 
-This is a dependency-free static site. You can open `index.html` directly or run a tiny local server:
+GitHub's docs for custom domains:
 
-```bash
-python3 -m http.server 4173
-```
-
-Then visit `http://localhost:4173`.
-
-## Publish
-
-For GitHub Pages, push this directory to a repository and keep `CNAME` set to:
-
-```text
-shijieliu.com
-```
-
-Then point the domain DNS records to the chosen host.
+https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site

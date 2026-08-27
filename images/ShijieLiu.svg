@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">Shijie Liu profile placeholder</title>
+  <desc id="desc">A circular monogram placeholder with the initials SL.</desc>
+  <rect width="360" height="360" fill="#f7f7f7"/>
+  <circle cx="180" cy="180" r="168" fill="#e8f3f7" stroke="#d7dde2" stroke-width="4"/>
+  <path d="M56 226c52-15 77-64 128-58 55 6 71 61 120 42" fill="none" stroke="#1772d0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M64 252c46-9 83-34 126-28 39 5 67 27 108 16" fill="none" stroke="#f09228" stroke-width="7" stroke-linecap="round" opacity=".82"/>
+  <text x="180" y="160" text-anchor="middle" font-family="Lato, Verdana, Helvetica, sans-serif" font-size="104" font-weight="700" fill="#222222">SL</text>
+</svg>
