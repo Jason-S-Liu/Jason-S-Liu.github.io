@@ -21,6 +21,21 @@ https://github.com/jonbarron/jonbarron.github.io
 4. In Settings -> Pages -> Custom domain, enter `shijieliu.com`.
 5. Set your domain DNS records as GitHub Pages instructs.
 
+For the apex domain `shijieliu.com`, GitHub currently lists these `A` records:
+
+```text
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+For `www.shijieliu.com`, add a `CNAME` record pointing to:
+
+```text
+YOUR_USERNAME.github.io
+```
+
 GitHub's docs for custom domains:
 
 https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
