@@ -11,10 +11,10 @@ window.SHIJIE_SITE = {
   lastUpdated: "August 2026",
   links: [
     { label: "Email", url: "mailto:shijieliu@shijieliu.com" },
-    { label: "CV", url: "cv.pdf" },
-    { label: "Google Scholar", url: "#" },
-    { label: "GitHub", url: "#" },
-    { label: "ORCID", url: "#" }
+    { label: "CV", url: "#experience" },
+    { label: "Google Scholar", url: "#publications" },
+    { label: "GitHub", url: "#research" },
+    { label: "ORCID", url: "#contact" }
   ],
   interests: [
     "Computational fluid dynamics",
@@ -85,8 +85,8 @@ window.SHIJIE_SITE = {
       authors: "Shijie Liu",
       venue: "Doctoral research project, in progress",
       links: [
-        { label: "overview", url: "#" },
-        { label: "bibtex", url: "#" }
+        { label: "overview", url: "#research" },
+        { label: "bibtex", url: "#publications" }
       ]
     },
     {
@@ -95,8 +95,8 @@ window.SHIJIE_SITE = {
       authors: "Shijie Liu",
       venue: "Manuscript in preparation",
       links: [
-        { label: "project", url: "#" },
-        { label: "code", url: "#" }
+        { label: "project", url: "#research" },
+        { label: "code", url: "#research" }
       ]
     },
     {
@@ -105,7 +105,7 @@ window.SHIJIE_SITE = {
       authors: "Shijie Liu",
       venue: "Technical note, draft",
       links: [
-        { label: "notes", url: "#" }
+        { label: "notes", url: "#research" }
       ]
     }
   ],
