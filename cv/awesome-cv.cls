@@ -76,34 +76,51 @@
 % Needed to manage math fonts
 \RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
-\RequirePackage{fontawesome6}
+\IfFileExists{fontawesome6.sty}{%
+  \RequirePackage{fontawesome6}%
+}{%
+  \RequirePackage{fontawesome}%
+  \RequirePackage{academicons}%
+  \providecommand{\faSquareWhatsapp}{\faWhatsapp}%
+  \providecommand{\faCakeCandles}{\faBirthdayCake}%
+  \providecommand{\faHouseChimney}{\faHome}%
+  \providecommand{\faSquareGithub}{\faGithubSquare}%
+  \providecommand{\faOrcid}{\aiOrcid}%
+  \providecommand{\faXTwitter}{\faTwitter}%
+  \providecommand{\faMastodon}{\faComment}%
+  \providecommand{\faResearchgate}{\faFlask}%
+  \providecommand{\faSquareXing}{\faXingSquare}%
+  \providecommand{\faKaggle}{\faBarChart}%
+  \providecommand{\faHackerrank}{\faCode}%
+}%
 \RequirePackage{accsupp}
 \defaultfontfeatures{
   Renderer=HarfBuzz,
 }
-\setmainfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
+\setmainfont{SourceSansPro}[
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-RegularIt,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldIt,
+  FontFace={l}{n}{Font=*-Light},
+  FontFace={l}{it}{Font=*-LightIt},
 ]
-\setsansfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
+\setsansfont{SourceSansPro}[
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-RegularIt,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldIt,
+  FontFace={l}{n}{Font=*-Light},
+  FontFace={l}{it}{Font=*-LightIt},
 ]
-\newfontfamily\roboto{Roboto}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
+\newfontfamily\roboto{texgyreheros}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  ItalicFont=*-italic,
+  BoldFont=*-bold,
+  BoldItalicFont=*-bolditalic,
 ]
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}

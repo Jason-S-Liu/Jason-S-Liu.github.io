@@ -1,0 +1,5 @@
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.synctex.gz
+cv/missfont.log

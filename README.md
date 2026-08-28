@@ -41,3 +41,17 @@ YOUR_USERNAME.github.io
 GitHub's docs for custom domains:
 
 https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
+
+## Google Indexing
+
+The homepage includes basic search metadata, structured data, `robots.txt`, and `sitemap.xml`.
+
+After publishing, use Google Search Console:
+
+1. Open https://search.google.com/search-console
+2. Add the property `https://shijieliu.com/`
+3. Verify ownership with either a DNS TXT record in Alibaba Cloud DNS or an HTML verification file in this repository root.
+4. Submit this sitemap: `https://shijieliu.com/sitemap.xml`
+5. Use URL Inspection for `https://shijieliu.com/` and click "Request indexing".
+
+Google can take days to weeks to show a new site in search results.

@@ -1,10 +1,28 @@
 $ErrorActionPreference = "Stop"
 
-Set-Location $PSScriptRoot
+$sourceDir = $PSScriptRoot
+$dataDir = Join-Path $sourceDir "..\data"
+$tempDir = Join-Path $env:TEMP ("shijieliu-cv-" + [guid]::NewGuid().ToString("N"))
 
-xelatex -interaction=nonstopmode ShijieLiu-CV.tex
-xelatex -interaction=nonstopmode ShijieLiu-CV.tex
+try {
+  New-Item -ItemType Directory -Path $tempDir | Out-Null
+  Copy-Item -Path (Join-Path $sourceDir "*") -Destination $tempDir -Recurse -Force
 
-Copy-Item -Force "ShijieLiu-CV.pdf" "..\data\ShijieLiu-CV.pdf"
+  Set-Location $tempDir
 
-Write-Host "Built ..\data\ShijieLiu-CV.pdf"
+  xelatex -interaction=nonstopmode -halt-on-error ShijieLiu-CV.tex
+  xelatex -interaction=nonstopmode -halt-on-error ShijieLiu-CV.tex
+
+  Copy-Item -Force "ShijieLiu-CV.pdf" (Join-Path $sourceDir "ShijieLiu-CV.pdf")
+  Copy-Item -Force "ShijieLiu-CV.pdf" (Join-Path $dataDir "ShijieLiu-CV.pdf")
+  Copy-Item -Force "ShijieLiu-CV.log" (Join-Path $sourceDir "ShijieLiu-CV.log")
+
+  Write-Host "Built ShijieLiu-CV.pdf"
+  Write-Host "Copied ..\data\ShijieLiu-CV.pdf"
+}
+finally {
+  Set-Location $sourceDir
+  if (Test-Path $tempDir) {
+    Remove-Item -Recurse -Force $tempDir
+  }
+}
