@@ -15,9 +15,17 @@
   const englishDescription = document.querySelector('meta[name="description"]').content;
   const chineseDescription = '刘士杰（Shijie / Jason Liu）——计算流体力学、钝体空气动力学与颗粒两相流研究。';
 
+  const chinesePapers = ['j1', 'j2', 'c1', 'c2', 'c3', 'coal-shed-2024'];
+  const englishTitle = document.title;
   function setLanguage(language, save = false) {
     const zh = language === 'zh';
     document.documentElement.lang = zh ? 'zh-CN' : 'en';
+    document.title = zh ? '刘士杰' : englishTitle;
+    for (const id of chinesePapers) {
+      for (const element of document.querySelectorAll(`#${id} h4, #${id} .authors, #${id} .venue, #${id} details > p`)) {
+        element.lang = zh ? 'zh-CN' : 'en';
+      }
+    }
     for (const entry of entries) {
       // The email reveal button is intentionally removed after use.
       if (entry.element.isConnected) entry.element.innerHTML = zh ? entry.zh : entry.en;
