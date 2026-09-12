@@ -58,7 +58,7 @@ Google can take days to weeks to show a new site in search results.
 
 ## Publications
 
-Each publication in `index.html` has a stable anchor, publisher link, and (when supplied) a local PDF link. PDF filenames containing Chinese characters or spaces are URL-encoded. `images/publications/` contains selected core framework and result figures rendered directly from regions of the supplied PDFs; `data/bibtex/` contains downloadable citations. Keep each inline citation and its `.bib` file in sync. Summaries are editorial summaries of the papers. J3 currently has a publisher link but no local PDF.
+Each publication in `index.html` has a stable anchor, publisher link, and (when supplied) a local PDF link. PDF filenames containing Chinese characters or spaces are URL-encoded. `images/publications/` contains selected core framework and result figures rendered directly from regions of the supplied PDFs; `data/bibtex/` contains downloadable citations. Keep each inline citation and its `.bib` file in sync. Summaries are editorial summaries of the papers. All nine listed publications now have local PDF links and core figure previews.
 
 The unnumbered coal-shed PDF is a separate 2024 journal publication, distinct from the C1 conference manuscript. J1 is listed with its formal 2024 publication year according to the PDF.
 

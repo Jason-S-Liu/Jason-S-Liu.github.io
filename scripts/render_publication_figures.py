@@ -9,6 +9,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 # asset, PDF prefix, page, crop (left, top, width, height), description
 FIGURES = [
+    ('J3', 'J3-', 5, (148, 104, 483, 606), 'Figure 3: LSTM framework from simulation to aerodynamic force prediction'),
     ('J5', 'J5-', 3, (120, 358, 535, 301), 'Figure 1: research workflow from URANS simulation to DMD reconstruction'),
     ('J4', 'J4-', 6, (48, 72, 728, 378), 'Figure 10: the first 20 DMD modes of the pressure field'),
     ('J1', 'J1-', 4, (127, 185, 550, 405), 'Figure 5: the first four DMD modes of the square-cylinder wake'),
