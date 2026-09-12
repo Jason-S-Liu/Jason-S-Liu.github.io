@@ -24,9 +24,9 @@ h4 { font-size: 17px; line-height: inherit; font-weight: 600; margin: 0; }
 .news-list { padding-left: 23px; margin: 0; }
 .news-list li { margin-bottom: 7px; }
 time { font-variant-numeric: tabular-nums; margin-right: 5px; }
-.publication { display: grid; grid-template-columns: 40% minmax(0, 1fr); gap: 0; align-items: start; margin: 0; padding: 15px 0; scroll-margin-top: 24px; }
-.paper-preview { display: flex; align-items: center; justify-content: center; width: calc(90% - 27px); margin: 0 auto; background: #fff; }
-.paper-preview img { display: block; width: 100%; height: auto; border-radius: 15px; }
+.publication { display: grid; grid-template-columns: 30% minmax(0, 1fr); gap: 28px; align-items: start; margin: 0; padding: 15px 0; scroll-margin-top: 24px; }
+.paper-preview { display: flex; align-items: center; justify-content: center; width: 100%; min-width: 0; margin: 0; background: #fff; }
+.paper-preview img { display: block; width: auto; height: auto; max-width: 100%; max-height: 180px; object-fit: contain; }
 .text-preview { min-height: 180px; border-radius: 15px; flex-direction: column; gap: 9px; color: #245278; background: #f2f6f9; text-align: center; }
 .text-preview > span:first-child { font-size: 36px; letter-spacing: 3px; font-weight: 600; }
 .text-preview small { font-size: 12px; }
@@ -46,7 +46,7 @@ summary:hover { color: #c66e12; }
 details > p { margin: 14px 0; font-style: italic; text-align: justify; }
 .citation { margin: 14px 0; }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.6; margin-bottom: 0; }
-.paper-copy { min-width: 0; padding: 0 15px; }
+.paper-copy { min-width: 0; padding: 0; }
 footer { margin-top: 40px; padding: 20px 0; border-top: 1px solid #eee; color: #777; font-size: 13px; text-align: center; }
 .skip-link { position: absolute; left: 12px; top: -100px; background: white; padding: 10px; z-index: 2; }
 .skip-link:focus { top: 12px; }
@@ -59,7 +59,7 @@ footer { margin-top: 40px; padding: 20px 0; border-top: 1px solid #eee; color: #
  nav { gap: 12px 20px; }
  .publication { grid-template-columns: 1fr; gap: 16px; margin-bottom: 34px; }
  .paper-preview { width: min(90%, 320px); height: auto; margin: auto; }
- .paper-copy { padding: 0; }
+ .paper-preview img { max-height: 220px; }
  h2 { font-size: 23px; }
  .bio, .paper-copy, section { overflow-wrap: anywhere; }
 }
