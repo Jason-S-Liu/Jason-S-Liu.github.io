@@ -1,16 +1,16 @@
 # shijieliu.com
 
-This is a GitHub Pages-style academic homepage for Shijie Liu, adapted from Jon Barron's public website source code:
+This is a GitHub Pages academic homepage for Shijie Liu. The current layout is inspired by https://tairanhe.com/, with design lineage from Jon Barron:
 
 https://github.com/jonbarron/jonbarron.github.io
 
 ## Files to Edit
 
 - `index.html`: profile text, links, news, papers, projects, teaching, service
-- `stylesheet.css`: visual style inherited from the Jon Barron template
+- `stylesheet.css`: responsive typography, profile layout, and publication list
 - `cv/`: Awesome-CV source for your CV
 - `data/ShijieLiu-CV.pdf`: the PDF linked from the homepage
-- `images/ShijieLiu.svg`: replace with your real profile photo, for example `images/ShijieLiu.jpg`
+- `images/ShijieLiu.jpg`: current profile portrait
 - `images/particle_wake.png`: replace or add paper thumbnails
 - `data/`: put your CV PDF, bio text, BibTeX files, and other downloadable files here, then update the links in `index.html`
 - `CNAME`: custom domain, currently `shijieliu.com`
@@ -55,3 +55,9 @@ After publishing, use Google Search Console:
 5. Use URL Inspection for `https://shijieliu.com/` and click "Request indexing".
 
 Google can take days to weeks to show a new site in search results.
+
+## Publications
+
+Each publication in `index.html` has a stable anchor, publisher link, and (when supplied) a local PDF link. PDF filenames containing Chinese characters or spaces are URL-encoded. `images/publications/` contains first-page previews rendered from the supplied PDFs; `data/bibtex/` contains downloadable citations. Keep each inline citation and its `.bib` file in sync. Summaries are editorial summaries of the papers. J3 currently has a publisher link but no local PDF.
+
+The unnumbered coal-shed PDF is a separate 2024 journal publication, distinct from the C1 conference manuscript. J1 is listed with its formal 2024 publication year according to the PDF.
