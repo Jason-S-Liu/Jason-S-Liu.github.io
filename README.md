@@ -63,3 +63,9 @@ Each publication in `index.html` has a stable anchor, publisher link, and (when 
 The unnumbered coal-shed PDF is a separate 2024 journal publication, distinct from the C1 conference manuscript. J1 is listed with its formal 2024 publication year according to the PDF.
 
 To regenerate publication figure previews, run `python3 scripts/render_publication_figures.py` with Poppler (`pdftoppm`) installed. The script records each source page, figure description, and crop coordinates; it does not redraw or alter scientific results.
+
+## Languages
+
+The top-right English / 中文 controls switch the interface and remember the preference in local storage. `?lang=zh` and `?lang=en` take priority and can be shared as direct links. English is the default and the no-JavaScript fallback.
+
+Edit English content in `index.html` and Chinese interface content in `scripts/translations.js`. `scripts/language.js` applies translations without resetting open abstracts or the revealed email. Publication titles, author names, venues, original abstracts, and BibTeX stay in their original language in both views; the language switch does not translate PDF downloads.
