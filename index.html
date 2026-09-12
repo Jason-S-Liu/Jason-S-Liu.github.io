@@ -20,10 +20,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&amp;text=%E3%80%8C%E5%88%98%E5%A3%AB%E6%9D%B0%E3%80%8D&amp;display=swap" rel="stylesheet">
     <link rel="canonical" href="https://shijieliu.com/">
     <link rel="icon" href="/images/favicon/favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="/images/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260912-balanced-figures">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260912-profile">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -35,7 +36,6 @@
           "https://github.com/Jason-S-Liu",
           "https://orcid.org/0009-0000-5048-2536"
         ],
-        "email": "jasonliu@cqu.edu.cn",
         "jobTitle": "Ph.D. Student in Wind Engineering",
         "affiliation": {
           "@type": "CollegeOrUniversity",
@@ -58,17 +58,17 @@
 <a class="skip-link" href="#publications">Skip to publications</a>
 <main>
 <header class="profile">
+<h1>Shijie Liu <span lang="zh">「刘士杰」</span></h1>
 <div class="profile-card">
 <a href="images/ShijieLiu.jpg"><img class="portrait" src="images/ShijieLiu.jpg" width="150" height="210" alt="Portrait of Shijie Liu"></a>
-<h1>Shijie Liu <span lang="zh">刘士杰</span></h1>
-<p class="profile-links"><a href="data/ShijieLiu-CV.pdf">CV</a> · <a href="mailto:jasonliu@cqu.edu.cn">Email</a><br><a href="https://github.com/Jason-S-Liu">GitHub</a> · <a href="https://orcid.org/0009-0000-5048-2536">ORCID</a></p>
+<p class="profile-links">| <a href="data/ShijieLiu-CV.pdf">CV</a> | <button class="email-reveal" type="button" aria-controls="contact-email" hidden>Email</button> |<br>| <a href="https://github.com/Jason-S-Liu">GitHub</a> | <a href="https://orcid.org/0009-0000-5048-2536">ORCID</a> |</p>
 </div>
 <div class="bio">
-<p>I am a <strong>Ph.D. student in Wind Engineering at Chongqing University</strong>, advised by Prof. Cruz Y. Li. My research focuses on computational fluid dynamics, bluff-body aerodynamics, and particle-laden flows.</p>
+<p>I am a Ph.D. student in Wind Engineering at Chongqing University, advised by Prof. Cruz Y. Li. My research focuses on computational fluid dynamics, bluff-body aerodynamics, and particle-laden flows.</p>
 <p>Previously, I received my M.Eng. in Wind Engineering from Shijiazhuang Tiedao University, advised by Prof. Qingkuan Liu and Prof. Zhen Zhang, and my B.Eng. in Civil Engineering from Hebei University of Science and Technology.</p>
-<p><strong>Research interests:</strong> Vortex shedding, wake transition, turbulent transport, and inertial-particle clustering, void formation, and deposition. I use high-fidelity simulation and Lagrangian particle tracking, and develop reduced-order and data-driven methods for flow reconstruction and aerodynamic prediction.</p>
-<p><strong>Research question:</strong> How do coherent wake structures govern unsteady aerodynamic loads and the transport of inertial particles around bluff bodies?</p>
-<p><strong>Email:</strong> <a href="mailto:jasonliu@cqu.edu.cn">jasonliu@cqu.edu.cn</a></p>
+<p><strong>Research Interest:</strong> <u>Vortex shedding</u>, <u>wake transition</u>, <u>turbulent transport</u>, and <u>inertial-particle clustering, void formation, and deposition</u>. I use high-fidelity simulation and Lagrangian particle tracking, and develop reduced-order and data-driven methods for flow reconstruction and aerodynamic prediction.</p>
+<p><strong>Research Question:</strong> How do coherent wake structures govern unsteady aerodynamic loads and the transport of inertial particles around bluff bodies?</p>
+<p class="contact-line">Email: <span id="contact-email" aria-live="polite"><button class="email-reveal" type="button" aria-controls="contact-email" hidden>Click to reveal</button></span><noscript>Enable JavaScript to reveal the email address, or see the CV.</noscript></p>
 </div>
 </header>
 <nav aria-label="Page sections"><a href="#news">News</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#teaching">Teaching</a><a href="#service">Service</a></nav>
@@ -266,5 +266,6 @@
 <footer>Updated September 2026 · Layout inspired by <a href="https://tairanhe.com/">Tairan He</a> and <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</footer>
 </main>
 <script src="scripts/publications.js" defer></script>
+<script src="scripts/contact.js" defer></script>
 </body>
 </html>
