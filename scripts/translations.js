@@ -38,7 +38,7 @@ window.siteTranslations = {
   "#honors > p:nth-of-type(6)": "<strong>2018–2019</strong> — 一等学业奖学金，河北科技大学前 5%。",
   "#teaching > p:nth-of-type(1)": "<strong>课程助教，<a href=\"https://cruz-fluid-course-hub.flux-lab-9249.chatgpt.site/\">流体力学（BEE20203）</a></strong><br><em>重庆大学，2026 年秋季学期</em>",
   "#teaching > p:nth-of-type(2)": "协助开展 58 学时理论教学和 4 次实践课，内容包括守恒定律、Navier–Stokes 方程、管道流动、建筑空气动力学、城市通风和 OpenFOAM 模拟流程。课程包含 6 次小组作业、1 项 OpenFOAM 项目及期末考试。",
-  "#service > p:nth-of-type(1)": "<strong>期刊审稿：</strong><em>Physics of Fluids</em>。",
+  "#service > p:nth-of-type(1)": "<strong>期刊审稿：</strong><em>Physics of Fluids</em>；<em>Journal of Wind Engineering and Industrial Aerodynamics</em>；<em>Building Simulation</em>。",
   "#service > p:nth-of-type(2)": "<strong>会议志愿者：</strong><a href=\"https://mp.weixin.qq.com/s/VJabjzWD3Skfu_AYy0uamw\">第 22 届全国结构风工程学术会议暨第 8 届全国风工程研究生论坛</a>，重庆，2025 年。",
   "#service > p:nth-of-type(3)": "<strong>会议志愿者：</strong><a href=\"https://mp.weixin.qq.com/s/pUNV8PogjomFV7Rip52mwA\">第二届桥梁结构极端荷载与防护学术会议</a>，2023 年。",
   "footer": "更新于 2026 年 9 月 · 布局参考 <a href=\"https://tairanhe.com/\">Tairan He</a> 与 <a href=\"https://github.com/jonbarron/jonbarron.github.io\">Jon Barron</a>。",
