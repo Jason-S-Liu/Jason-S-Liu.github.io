@@ -28,7 +28,8 @@
     <link rel="icon" href="/images/favicon/jason-avatar-96.png" type="image/png" sizes="96x96">
     <link rel="icon" href="/images/favicon/jason-avatar-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="/images/favicon/jason-avatar-180.png" sizes="180x180">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260912-bilingual">
+    <script src="/scripts/theme.js?v=20260914"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css?v=20260914-blog-theme">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -70,10 +71,18 @@
   <body>
 <a class="skip-link" href="#publications">Skip to publications</a>
 <main>
+<div class="site-toolbar">
+<nav class="site-nav" aria-label="Main navigation">
+<a href="/" data-zh="首页">Home</a>
+<a href="#publications" data-zh="学术论文">Publications</a>
+<details class="blog-menu"><summary><span data-zh="博客">Blog</span><span class="menu-arrow" aria-hidden="true"></span></summary>
+<div class="blog-dropdown"><a href="/blog/" data-zh="全部文章">All posts</a><a href="/blog/tech/" data-zh="技术">Tech</a><a href="/blog/notes/" data-zh="杂记">Notes / 杂记</a></div>
+</details>
+</nav>
+<button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" hidden><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 14.4A9 9 0 0 1 9.6 3.2 9 9 0 1 0 20.8 14.4Z" fill="currentColor"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.8"/></svg></button>
 <div class="language-switch" role="group" aria-label="Language / 语言" hidden>
-  <button type="button" data-language="en" lang="en" aria-pressed="true">English</button>
-  <span aria-hidden="true">/</span>
-  <button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button>
+<button type="button" data-language="en" lang="en" aria-pressed="true">English</button><span aria-hidden="true">/</span><button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button>
+</div>
 </div>
 <header class="profile">
 <h1>Jason Shijie Liu <span lang="zh">「刘士杰」</span></h1>
@@ -286,6 +295,6 @@
 <script src="scripts/publications.js" defer></script>
 <script src="scripts/contact.js" defer></script>
 <script src="scripts/translations.js?v=4" defer></script>
-<script src="scripts/language.js?v=2" defer></script>
+<script src="scripts/language.js?v=20260914" defer></script>
 </body>
 </html>

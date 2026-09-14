@@ -1,10 +1,13 @@
 (() => {
-  const translations = window.siteTranslations;
+  const translations = window.siteTranslations || {};
   if (!translations) return;
   // Cache original content once; avoid replacing interactive containers or citations.
   const entries = Object.entries(translations).flatMap(([selector, zh]) =>
     [...document.querySelectorAll(selector)].map(element => ({element, en: element.innerHTML, zh}))
   );
+  for (const element of document.querySelectorAll('[data-zh]')) {
+    entries.push({element, en: element.innerHTML, zh: element.dataset.zh});
+  }
   const publicationLabels = [...document.querySelectorAll('.paper-links a, .paper-links button, .paper-details summary')]
     .map(element => ({element, en: element.textContent}));
   const labels = {pdf: 'PDF', publisher: '期刊／会议页面', abstract: '摘要', bibtex: 'BibTeX'};
@@ -13,14 +16,14 @@
   const navigation = document.querySelector('nav');
   const portrait = document.querySelector('.portrait');
   const englishDescription = document.querySelector('meta[name="description"]').content;
-  const chineseDescription = '刘士杰（Shijie / Jason Liu）——计算流体力学、钝体空气动力学与颗粒两相流研究。';
+  const chineseDescription = document.querySelector('meta[name="description"]').dataset.zh || '刘士杰（Shijie / Jason Liu）——计算流体力学、钝体空气动力学与颗粒两相流研究。';
 
   const chinesePapers = ['j1', 'j2', 'c1', 'c2', 'c3', 'coal-shed-2024'];
   const englishTitle = document.title;
   function setLanguage(language, save = false) {
     const zh = language === 'zh';
     document.documentElement.lang = zh ? 'zh-CN' : 'en';
-    document.title = zh ? '刘士杰' : englishTitle;
+    document.title = zh ? (document.body.dataset.titleZh || '刘士杰') : englishTitle;
     for (const id of chinesePapers) {
       for (const element of document.querySelectorAll(`#${id} h4, #${id} .authors, #${id} .venue, #${id} details > p`)) {
         element.lang = zh ? 'zh-CN' : 'en';
@@ -36,8 +39,8 @@
     for (const button of buttons) {
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
     }
-    navigation.setAttribute('aria-label', zh ? '页面导航' : 'Page sections');
-    portrait.alt = zh ? '刘士杰的个人照片' : 'Portrait of Shijie Liu';
+    if (navigation) navigation.setAttribute('aria-label', zh ? '主导航' : 'Main navigation');
+    if (portrait) portrait.alt = zh ? '刘士杰的个人照片' : 'Portrait of Shijie Liu';
     document.querySelector('meta[name="description"]').content = zh ? chineseDescription : englishDescription;
     if (save) {
       try { localStorage.setItem('site-language', language); } catch { /* Storage may be disabled. */ }

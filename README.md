@@ -69,3 +69,9 @@ To regenerate publication figure previews, run `python3 scripts/render_publicati
 The top-right English / 中文 controls switch the interface and remember the preference in local storage. `?lang=zh` and `?lang=en` take priority and can be shared as direct links. English is the default and the no-JavaScript fallback.
 
 Edit English content in `index.html` and Chinese interface content in `scripts/translations.js`. `scripts/language.js` applies translations without resetting open abstracts or the revealed email. In Chinese mode, the heading shows 刘士杰 and the six Chinese publications use their original Chinese titles, author names, venues, and abstracts from the supplied PDFs. J2’s Chinese abstract is transcribed from its first page because of the fragmented text layer. The three English publications stay in English. English mode restores the existing English presentation; BibTeX and PDF downloads remain unchanged.
+
+## Blog and appearance
+
+Shared top navigation includes Blog → All posts / Tech / Notes and a light/dark toggle. `scripts/theme.js` applies a saved choice before CSS loads; first visits follow the system preference. The choice is stored as `site-theme`. Language and theme work independently across the homepage and blog pages.
+
+Blog landing pages: `blog/index.html`, `blog/tech/index.html`, `blog/notes/index.html`. They currently show honest empty states; no placeholder articles are presented as authored posts. To publish, add a static article page under `blog/`, include the shared CSS, theme script and navigation, and add a dated link with a short description to the main archive and appropriate category page. Remove that page's empty state once it has articles, and add the article URL to `sitemap.xml`. Keep article text in its original language unless a translation is available. `data-zh` is for translated UI labels; `scripts/language.js` handles them. No build step is required.
