@@ -28,12 +28,22 @@
     }
     new MutationObserver(() => apply(root.dataset.theme)).observe(root, {attributes: true, attributeFilter: ['lang']});
     apply(root.dataset.theme);
-    const menu = document.querySelector('.blog-menu');
-    if (menu) {
-      document.addEventListener('click', event => { if (!menu.contains(event.target)) menu.open = false; });
-      document.addEventListener('keydown', event => {
-        if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    const menus = [...document.querySelectorAll('.nav-menu')];
+    for (const menu of menus) {
+      menu.addEventListener('toggle', () => {
+        if (menu.open) for (const other of menus) if (other !== menu) other.open = false;
+      });
+      menu.addEventListener('click', event => {
+        if (event.target.closest('a')) menu.open = false;
       });
     }
+    document.addEventListener('click', event => {
+      for (const menu of menus) if (!menu.contains(event.target)) menu.open = false;
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+      const openMenu = menus.find(menu => menu.open);
+      if (openMenu) { openMenu.open = false; openMenu.querySelector('summary').focus(); }
+    });
   });
 })();

@@ -28,8 +28,8 @@
     <link rel="icon" href="/images/favicon/jason-avatar-96.png" type="image/png" sizes="96x96">
     <link rel="icon" href="/images/favicon/jason-avatar-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="/images/favicon/jason-avatar-180.png" sizes="180x180">
-    <script src="/scripts/theme.js?v=20260914"></script>
-    <link rel="stylesheet" type="text/css" href="/stylesheet.css?v=20260914-navigation">
+    <script src="/scripts/theme.js?v=20260914-submenus"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css?v=20260914-submenus">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -75,12 +75,15 @@
 <nav class="site-nav" aria-label="Main navigation">
 <a href="/" data-zh="首页">Home</a>
 <a href="#news" data-zh="动态">News</a>
-<a href="#publications" data-zh="论文">Publications</a>
-<a href="#experience" data-zh="经历">Experience</a>
+<details class="nav-menu" name="site-submenu"><summary><span data-zh="论文">Publications</span><span class="menu-arrow" aria-hidden="true"></span></summary>
+<div class="nav-dropdown"><a href="#journal-articles" data-zh="期刊论文">Journal Articles</a><a href="#conference-proceedings" data-zh="会议论文">Conference Proceedings</a></div></details>
+<details class="nav-menu" name="site-submenu"><summary><span data-zh="经历">Experience</span><span class="menu-arrow" aria-hidden="true"></span></summary>
+<div class="nav-dropdown"><a href="#education" data-zh="教育经历">Education</a><a href="#internships" data-zh="实习经历">Internships</a></div></details>
 <a href="#awards" data-zh="荣誉">Awards</a>
-<a href="#service" data-zh="服务">Service</a>
-<details class="blog-menu"><summary><span data-zh="博客">Blog</span><span class="menu-arrow" aria-hidden="true"></span></summary>
-<div class="blog-dropdown"><a href="/blog/" data-zh="全部文章">All posts</a><a href="/blog/tech/" data-zh="技术">Tech</a><a href="/blog/notes/" data-zh="杂记">Notes / 杂记</a></div>
+<details class="nav-menu" name="site-submenu"><summary><span data-zh="服务">Service</span><span class="menu-arrow" aria-hidden="true"></span></summary>
+<div class="nav-dropdown"><a href="#reviewing" data-zh="期刊审稿">Reviewer</a><a href="#teaching" data-zh="教学工作">Teaching</a><a href="#conference-volunteer" data-zh="会议志愿者">Conference Volunteer</a></div></details>
+<details class="nav-menu blog-menu" name="site-submenu"><summary><span data-zh="博客">Blog</span><span class="menu-arrow" aria-hidden="true"></span></summary>
+<div class="nav-dropdown"><a href="/blog/tech/" data-zh="技术">Tech</a><a href="/blog/notes/" data-zh="杂记">Notes / 杂记</a></div>
 </details>
 </nav>
 <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" hidden><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 14.4A9 9 0 0 1 9.6 3.2 9 9 0 1 0 20.8 14.4Z" fill="currentColor"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.8"/></svg></button>
@@ -106,7 +109,7 @@
 <ul class="news-list"><li><time datetime="2026-09">[09/2026]</time> Serving as a teaching assistant for BEE20203 Fluid Mechanics at Chongqing University.</li><li><time datetime="2025-11">[11/2025]</time> Our work on bridge-deck wakes and feature-preserving reduced-order models appeared in <a href="#j5">Applied Sciences</a>.</li><li><time datetime="2025-01">[01/2025]</time> Our work on coal-shed wind-pressure reconstruction and prediction appeared in <a href="#j4">Journal of Wind Engineering and Industrial Aerodynamics</a>.</li><li><time datetime="2024-09">[09/2024]</time> Started my Ph.D. in Wind Engineering at Chongqing University.</li></ul>
 </section>
 <section id="publications" aria-labelledby="publications-heading"><h2 id="publications-heading">Publications</h2>
-<h3>Journal Articles</h3>
+<h3 id="journal-articles">Journal Articles</h3>
 <article class="publication" id="j5">
 <a class="paper-preview" href="data/J5-applsci-15-12670-v4.pdf" aria-label="Read PDF: Effects of angle of attack and feature-preserving reduced-order models for canonical bridge deck wakes"><img src="images/publications/J5-figure.jpg" width="1070" height="602" loading="lazy" alt="Figure 1: research workflow from URANS simulation to DMD reconstruction"></a>
 <div class="paper-copy"><h4 lang="en"><a href="https://doi.org/10.3390/app152312670">Effects of angle of attack and feature-preserving reduced-order models for canonical bridge deck wakes</a></h4>
@@ -215,7 +218,7 @@
 </pre></div></details></div></div>
 </article>
 
-<h3>Conference Proceedings</h3>
+<h3 id="conference-proceedings">Conference Proceedings</h3>
 <article class="publication" id="c3">
 <a class="paper-preview" href="data/C3-%E5%9F%BA%E4%BA%8E%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%80%81%E5%88%86%E8%A7%A3%E7%9A%84%E6%96%B9%E6%9F%B1%E7%BB%95%E6%B5%81%E9%9D%9E%E5%AE%9A%E5%B8%B8%E6%B5%81%E5%9C%BA%E5%88%86%E6%9E%90_%E5%88%98%E5%A3%AB%E6%9D%B0%20%281%29.pdf" aria-label="Read PDF: DMD-based unsteady flow-field analysis around a square cylinder"><img src="images/publications/C3-figure.jpg" width="948" height="580" loading="lazy" alt="Figure 5: the first four DMD modes"></a>
 <div class="paper-copy"><h4 lang="en"><a href="https://kns.cnki.net/kcms2/article/abstract?v=5NzxYzB6HGoqSmML3JfLq3vd8biPv4xifE6u2eBFecDjCA6x7mAmDePAB-b7SA-2B9y7lGX9W5cnp2ksWjO5GU31FEw8RK42iuI6E2lGmuDeccWsE2oA8COGXVDinLE11VAM2SKC4ykNPOSS9i4nb2Ka1I33duNV-lW4-mcXokhg9eUHveUi21adFPK9Eema&amp;uniplatform=NZKPT&amp;language=CHS">DMD-based unsteady flow-field analysis around a square cylinder</a></h4>
@@ -303,7 +306,7 @@
 </main>
 <script src="scripts/publications.js" defer></script>
 <script src="scripts/contact.js" defer></script>
-<script src="scripts/translations.js?v=20260914-navigation" defer></script>
+<script src="scripts/translations.js?v=20260914-submenus" defer></script>
 <script src="scripts/language.js?v=20260914" defer></script>
 </body>
 </html>

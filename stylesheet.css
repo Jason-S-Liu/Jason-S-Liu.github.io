@@ -85,16 +85,16 @@ html[lang="zh-CN"] .bio { text-align: left; }
 /* Shared navigation, blog and theme controls. Native details remains usable without JS. */
 .site-toolbar { display: flex; align-items: center; justify-content: flex-end; gap: 18px; margin-bottom: 30px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
 .site-nav { padding: 0; font-size: 17px; gap: 22px; align-items: center; }
-.site-nav > a, .blog-menu > summary { color: var(--ink); }
-.site-nav a:hover, .blog-menu > summary:hover { color: var(--link); }
+.site-nav > a, .nav-menu > summary { color: var(--ink); }
+.site-nav a:hover, .nav-menu > summary:hover { color: var(--link); }
 .site-toolbar .language-switch { margin: 0; font-size: 13px; gap: 7px; }
-.site-toolbar .blog-menu { position: relative; margin: 0; }
-.site-toolbar .blog-menu > summary { display: flex; gap: 6px; align-items: center; list-style: none; font: inherit; cursor: pointer; }
-.blog-menu > summary::-webkit-details-marker { display: none; }
+.site-toolbar .nav-menu { position: relative; margin: 0; }
+.site-toolbar .nav-menu > summary { display: flex; gap: 6px; align-items: center; list-style: none; font: inherit; cursor: pointer; }
+.nav-menu > summary::-webkit-details-marker { display: none; }
 .menu-arrow { border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid currentColor; }
-.blog-dropdown { position: absolute; top: calc(100% + 10px); right: 0; min-width: 170px; padding: 8px 0; background: var(--page); border: 1px solid var(--border); border-radius: 5px; box-shadow: 0 8px 24px #0002; z-index: 10; }
-.blog-dropdown a { display: block; padding: 8px 16px; color: var(--ink); }
-.blog-dropdown a:hover { background: var(--surface); }
+.nav-dropdown { position: absolute; top: calc(100% + 10px); right: 0; min-width: 170px; padding: 8px 0; background: var(--page); border: 1px solid var(--border); border-radius: 5px; box-shadow: 0 8px 24px #0002; z-index: 10; }
+.nav-dropdown a { display: block; padding: 8px 16px; color: var(--ink); }
+.nav-dropdown a:hover { background: var(--surface); }
 .theme-toggle { flex: 0 0 36px; width: 36px; height: 36px; padding: 6px; border: 0; background: none; color: var(--ink); cursor: pointer; border-radius: 50%; }
 .theme-toggle:hover { background: var(--surface); }
 .theme-toggle[hidden] { display: none; }
@@ -114,7 +114,7 @@ html[lang="zh-CN"] .bio { text-align: left; }
  .site-nav { margin-right: auto; gap: 16px; font-size: 16px; }
  .site-toolbar .language-switch { margin: 0 0 0 auto; }
  .blog-header { padding-top: 15px; }
- .blog-dropdown { right: 0; min-width: 145px; }
+ .nav-dropdown { right: 0; min-width: 145px; }
 }
 
 /* One shared navigation for the homepage and all blog archives. */
@@ -128,10 +128,13 @@ html[lang="zh-CN"] .bio { text-align: left; }
  .site-nav { flex: 1 0 100%; justify-content: flex-start; gap: 10px 18px; }
  .site-toolbar .theme-toggle { margin-left: auto; }
  .site-toolbar .language-switch { margin-left: 0; }
- .blog-dropdown { left: 0; right: auto; }
+ .nav-dropdown { left: 0; right: auto; }
 }
 @media (max-width: 860px) {
  .site-toolbar { position: relative; }
- .site-toolbar .blog-menu { position: static; }
- .site-toolbar .blog-dropdown { top: 100%; right: 0; left: auto; }
+ .site-toolbar .nav-menu { position: static; }
+ .site-toolbar .nav-dropdown { top: 100%; right: 0; left: auto; }
 }
+
+.nav-dropdown { min-width: 200px; }
+#journal-articles, #conference-proceedings, #internships, #reviewing, #conference-volunteer { scroll-margin-top: 24px; }
