@@ -116,3 +116,22 @@ html[lang="zh-CN"] .bio { text-align: left; }
  .blog-header { padding-top: 15px; }
  .blog-dropdown { right: 0; min-width: 145px; }
 }
+
+/* One shared navigation for the homepage and all blog archives. */
+.site-toolbar { gap: 14px; }
+.site-nav { gap: 17px; font-size: 16px; }
+.service-list { padding-left: 23px; }
+.service-list li { margin-bottom: 10px; }
+#education, #honors, #teaching { scroll-margin-top: 24px; }
+@media (max-width: 860px) {
+ .site-toolbar { flex-wrap: wrap; }
+ .site-nav { flex: 1 0 100%; justify-content: flex-start; gap: 10px 18px; }
+ .site-toolbar .theme-toggle { margin-left: auto; }
+ .site-toolbar .language-switch { margin-left: 0; }
+ .blog-dropdown { left: 0; right: auto; }
+}
+@media (max-width: 860px) {
+ .site-toolbar { position: relative; }
+ .site-toolbar .blog-menu { position: static; }
+ .site-toolbar .blog-dropdown { top: 100%; right: 0; left: auto; }
+}

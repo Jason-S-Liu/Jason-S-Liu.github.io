@@ -75,3 +75,7 @@ Edit English content in `index.html` and Chinese interface content in `scripts/t
 Shared top navigation includes Blog → All posts / Tech / Notes and a light/dark toggle. `scripts/theme.js` applies a saved choice before CSS loads; first visits follow the system preference. The choice is stored as `site-theme`. Language and theme work independently across the homepage and blog pages.
 
 Blog landing pages: `blog/index.html`, `blog/tech/index.html`, `blog/notes/index.html`. They currently show honest empty states; no placeholder articles are presented as authored posts. To publish, add a static article page under `blog/`, include the shared CSS, theme script and navigation, and add a dated link with a short description to the main archive and appropriate category page. Remove that page's empty state once it has articles, and add the article URL to `sitemap.xml`. Keep article text in its original language unless a translation is available. `data-zh` is for translated UI labels; `scripts/language.js` handles them. No build step is required.
+
+## Homepage organization
+
+The top bar is shared by the homepage and blog archives: Home, News, Publications, Experience, Awards, Service, Blog. Experience contains Education and an Internships heading with no entries yet. Service groups journal reviewing, teaching and conference volunteering. Legacy `#education`, `#honors` and `#teaching` anchors remain valid.

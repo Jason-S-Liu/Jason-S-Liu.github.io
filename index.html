@@ -29,7 +29,7 @@
     <link rel="icon" href="/images/favicon/jason-avatar-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="/images/favicon/jason-avatar-180.png" sizes="180x180">
     <script src="/scripts/theme.js?v=20260914"></script>
-    <link rel="stylesheet" type="text/css" href="/stylesheet.css?v=20260914-blog-theme">
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css?v=20260914-navigation">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -74,7 +74,11 @@
 <div class="site-toolbar">
 <nav class="site-nav" aria-label="Main navigation">
 <a href="/" data-zh="首页">Home</a>
-<a href="#publications" data-zh="学术论文">Publications</a>
+<a href="#news" data-zh="动态">News</a>
+<a href="#publications" data-zh="论文">Publications</a>
+<a href="#experience" data-zh="经历">Experience</a>
+<a href="#awards" data-zh="荣誉">Awards</a>
+<a href="#service" data-zh="服务">Service</a>
 <details class="blog-menu"><summary><span data-zh="博客">Blog</span><span class="menu-arrow" aria-hidden="true"></span></summary>
 <div class="blog-dropdown"><a href="/blog/" data-zh="全部文章">All posts</a><a href="/blog/tech/" data-zh="技术">Tech</a><a href="/blog/notes/" data-zh="杂记">Notes / 杂记</a></div>
 </details>
@@ -98,7 +102,6 @@
 <p class="contact-line"><span id="contact-label">Email:</span> <span id="contact-email" aria-live="polite"><button class="email-reveal" type="button" aria-controls="contact-email" hidden>Click to reveal</button></span><noscript>Enable JavaScript to reveal the email address, or see the CV.</noscript></p>
 </div>
 </header>
-<nav aria-label="Page sections"><a href="#news">News</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#teaching">Teaching</a><a href="#service">Service</a></nav>
 <section id="news" aria-labelledby="news-heading"><h2 id="news-heading">News</h2>
 <ul class="news-list"><li><time datetime="2026-09">[09/2026]</time> Serving as a teaching assistant for BEE20203 Fluid Mechanics at Chongqing University.</li><li><time datetime="2025-11">[11/2025]</time> Our work on bridge-deck wakes and feature-preserving reduced-order models appeared in <a href="#j5">Applied Sciences</a>.</li><li><time datetime="2025-01">[01/2025]</time> Our work on coal-shed wind-pressure reconstruction and prediction appeared in <a href="#j4">Journal of Wind Engineering and Industrial Aerodynamics</a>.</li><li><time datetime="2024-09">[09/2024]</time> Started my Ph.D. in Wind Engineering at Chongqing University.</li></ul>
 </section>
@@ -252,7 +255,8 @@
 </pre></div></details></div></div>
 </article>
 </section>
-<section id="education" aria-labelledby="education-heading"><h2 id="education-heading">Education</h2>
+<section id="experience" aria-labelledby="experience-heading"><h2 id="experience-heading" data-zh="经历">Experience</h2>
+<div id="education" aria-labelledby="education-heading"><h3 id="education-heading">Education</h3>
 <p><strong><a href="https://www.cqu.edu.cn/">Chongqing University</a></strong><br>
                   Ph.D. Student in Wind Engineering, Sep. 2024 &ndash; Present<br>
                   Advisor: <a href="https://civil.cqu.edu.cn/info/1873/17337.htm">Prof. Cruz Y. Li</a>.</p>
@@ -262,16 +266,22 @@
                   Research: data-driven unsteady aerodynamics, dynamic mode decomposition, and reduced-order flow-field modeling.</p>
                 <p><strong><a href="https://www.hebust.edu.cn/">Hebei University of Science and Technology</a></strong><br>
                   B.Eng. in Civil Engineering, Sep. 2017 &ndash; Jun. 2021.</p>
+</div>
+<div id="internships"><h3 data-zh="实习经历">Internships</h3><!-- Internship details to be added when available. --></div>
 </section>
-<section id="honors" aria-labelledby="honors-heading"><h2 id="honors-heading">Honors and Awards (Selected)</h2>
+<section id="awards" aria-labelledby="honors-heading"><h2 id="honors-heading">Awards</h2><div id="honors">
 <p><strong>2023-2024</strong> &mdash; <a href="https://mp.weixin.qq.com/s/u8d6UqpagdlPP2cNFOfEWA">Top Ten Academic Stars of Graduate Students</a>, Shijiazhuang Tiedao University.</p>
                 <p><strong>2022–2023</strong> &mdash; <a href="https://mp.weixin.qq.com/s/eJSRvEqltI6FT5HjwSPZNw">National Scholarship for Graduate Students</a>, Ministry of Education of China.</p>
                 <p><strong>2021-2022</strong> &mdash; Excellent Graduate Student, Top 10% of students at STDU.</p>
                 <p><strong>2023</strong> &mdash; <a href="https://mp.weixin.qq.com/s/fXNElU9eZOFW_HmSkzPfYg">Excellent Paper Award</a>, 32nd National Conference on Structural Engineering.</p>
                 <p><strong>2019-2020</strong> &mdash; Third Prize, Pinming Cup National BIM Competition.</p>
                 <p><strong>2018-2019</strong> &mdash; First-Class Academic Scholarship, Top 5% of students at HEBUST.</p>
+</div>
 </section>
-<section id="teaching" aria-labelledby="teaching-heading"><h2 id="teaching-heading">Teaching</h2>
+
+<section id="service" aria-labelledby="service-heading"><h2 id="service-heading">Service</h2>
+<div id="reviewing"><h3 data-zh="期刊审稿">Reviewer</h3><p><em>Physics of Fluids</em>; <em>Journal of Wind Engineering and Industrial Aerodynamics</em>; <em>Building Simulation</em>.</p></div>
+<div id="teaching" aria-labelledby="teaching-heading"><h3 id="teaching-heading">Teaching</h3>
 <p>
                   <strong>Teaching Assistant, <a href="https://cruz-fluid-course-hub.flux-lab-9249.chatgpt.site/">Fluid Mechanics (BEE20203)</a></strong>
                   <br>
@@ -282,19 +292,18 @@
                   pipe and duct flows, building aerodynamics, urban ventilation, and OpenFOAM workflows. The course includes
                   six group assignments, an OpenFOAM project, and a final examination.
                 </p>
-</section>
-<section id="service" aria-labelledby="service-heading"><h2 id="service-heading">Academic Service</h2>
-<p><strong>Reviewer:</strong> <em>Physics of Fluids</em>; <em>Journal of Wind Engineering and Industrial Aerodynamics</em>; <em>Building Simulation</em>.</p>
-                <p><strong>Conference Volunteer:</strong>
-                  <a href="https://mp.weixin.qq.com/s/VJabjzWD3Skfu_AYy0uamw">22nd National Conference on Structural Wind Engineering and 8th National Wind Engineering Graduate Forum</a>, Chongqing, 2025.</p>
-                <p><strong>Conference Volunteer:</strong>
-                  <a href="https://mp.weixin.qq.com/s/pUNV8PogjomFV7Rip52mwA">2nd Academic Conference on Extreme Loads and Protection of Bridge Structures</a>, 2023.</p>
+</div>
+<div id="conference-volunteer"><h3 data-zh="会议志愿者">Conference Volunteer</h3>
+<ul class="service-list">
+<li data-zh='&lt;a href="https://mp.weixin.qq.com/s/VJabjzWD3Skfu_AYy0uamw"&gt;第 22 届全国结构风工程学术会议暨第 8 届全国风工程研究生论坛&lt;/a&gt;，重庆，2025 年。'><a href="https://mp.weixin.qq.com/s/VJabjzWD3Skfu_AYy0uamw">22nd National Conference on Structural Wind Engineering and 8th National Wind Engineering Graduate Forum</a>, Chongqing, 2025.</li>
+<li data-zh='&lt;a href="https://mp.weixin.qq.com/s/pUNV8PogjomFV7Rip52mwA"&gt;第二届桥梁结构极端荷载与防护学术会议&lt;/a&gt;，2023 年。'><a href="https://mp.weixin.qq.com/s/pUNV8PogjomFV7Rip52mwA">2nd Academic Conference on Extreme Loads and Protection of Bridge Structures</a>, 2023.</li>
+</ul></div>
 </section>
 <footer>Updated September 2026 · Layout inspired by <a href="https://tairanhe.com/">Tairan He</a> and <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</footer>
 </main>
 <script src="scripts/publications.js" defer></script>
 <script src="scripts/contact.js" defer></script>
-<script src="scripts/translations.js?v=4" defer></script>
+<script src="scripts/translations.js?v=20260914-navigation" defer></script>
 <script src="scripts/language.js?v=20260914" defer></script>
 </body>
 </html>
