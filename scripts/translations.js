@@ -33,7 +33,7 @@ window.siteTranslations = {
   "#honors > p:nth-of-type(6)": "<strong>2018–2019</strong> — 一等学业奖学金，河北科技大学前 5%。",
   "#teaching > p:nth-of-type(1)": "<strong>课程助教，<a href=\"https://cruz-fluid-course-hub.flux-lab-9249.chatgpt.site/\">流体力学（BEE20203）</a></strong><br><em>重庆大学，2026 年秋季学期</em>",
   "#teaching > p:nth-of-type(2)": "协助开展 58 学时理论教学和 4 次实践课，内容包括守恒定律、Navier–Stokes 方程、管道流动、建筑空气动力学、城市通风和 OpenFOAM 模拟流程。课程包含 6 次小组作业、1 项 OpenFOAM 项目及期末考试。",
-  "footer": "更新于 2026 年 9 月 · 布局参考 <a href=\"https://tairanhe.com/\">Tairan He</a> 与 <a href=\"https://github.com/jonbarron/jonbarron.github.io\">Jon Barron</a>。",
+  "footer": "© 2026 刘士杰 版权所有。<br>更新于 2026 年 9 月 · 布局参考 <a href=\"https://tairanhe.com/\">Tairan He</a> 与 <a href=\"https://github.com/jonbarron/jonbarron.github.io\">Jon Barron</a>。",
   ".citation > a": "下载 .bib",
   ".profile h1": "刘士杰",
   "#j1 h4 a": "基于动力学模态分解的方柱绕流非定常流场分析",
