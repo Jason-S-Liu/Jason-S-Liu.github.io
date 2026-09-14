@@ -146,3 +146,19 @@ html[lang="zh-CN"] .bio { text-align: left; }
 .profile h1 .name-english { font-family: Arial, Helvetica, sans-serif; font-weight: 700; white-space: nowrap; }
 .profile h1 .name-chinese { font-weight: 300; margin-left: .12em; }
 html[lang="zh-CN"] .profile h1 { font-weight: 300; }
+
+/* Animate navigation underlines without shifting text or menu layout. */
+.site-nav > a, .site-nav .nav-menu > summary, .blog-tabs > a { position: relative; }
+.site-nav > a::after, .site-nav .nav-menu > summary::after, .blog-tabs > a::after {
+ content: ''; position: absolute; left: 0; right: 0; bottom: -5px; height: 3px;
+ background: var(--muted); opacity: .55; pointer-events: none;
+ transform: scaleX(0); transform-origin: left center; transition: transform 240ms ease;
+}
+@media (hover: hover) {
+ .site-nav > a:hover::after, .site-nav .nav-menu > summary:hover::after, .blog-tabs > a:hover::after { transform: scaleX(1); }
+}
+.site-nav > a:focus-visible::after, .site-nav .nav-menu > summary:focus-visible::after,
+.site-nav .nav-menu[open] > summary::after, .blog-tabs > a:focus-visible::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) {
+ .site-nav > a::after, .site-nav .nav-menu > summary::after, .blog-tabs > a::after { transition: none; }
+}
