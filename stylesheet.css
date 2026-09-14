@@ -162,3 +162,11 @@ html[lang="zh-CN"] .profile h1 { font-weight: 300; }
 @media (prefers-reduced-motion: reduce) {
  .site-nav > a::after, .site-nav .nav-menu > summary::after, .blog-tabs > a::after { transition: none; }
 }
+
+.profile-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.profile-links > a, .profile-links > button { display: inline-flex; flex-direction: column; align-items: center; gap: 5px; font-size: 12px; line-height: 1.5; color: var(--ink); }
+.profile-links > button[hidden] { display: none; }
+.profile-links svg { width: 29px; height: 29px; }
+.profile-links > a:hover, .profile-links > button:hover { color: var(--link); }
+.powered-by, .powered-by a { display: inline-flex; align-items: center; gap: 5px; }
+.powered-by svg { width: 15px; height: 15px; }
