@@ -152,7 +152,7 @@ html[lang="zh-CN"] .profile h1 { font-weight: 300; }
 .site-nav > a::after, .site-nav .nav-menu > summary::after, .blog-tabs > a::after {
  content: ''; position: absolute; left: 0; right: 0; bottom: -5px; height: 3px;
  background: var(--muted); opacity: .55; pointer-events: none;
- transform: scaleX(0); transform-origin: left center; transition: transform 240ms ease;
+ transform: scaleX(0); transform-origin: center center; transition: transform 240ms ease;
 }
 @media (hover: hover) {
  .site-nav > a:hover::after, .site-nav .nav-menu > summary:hover::after, .blog-tabs > a:hover::after { transform: scaleX(1); }
