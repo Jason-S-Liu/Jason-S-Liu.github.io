@@ -141,3 +141,8 @@ html[lang="zh-CN"] .bio { text-align: left; }
 
 #contact-email .revealed-email { color: var(--ink); }
 #contact-email .revealed-email:hover { color: var(--link); }
+
+.profile h1 { font-size: clamp(30px, 4.5vw, 44px); }
+.profile h1 .name-english { font-family: Arial, Helvetica, sans-serif; font-weight: 700; white-space: nowrap; }
+.profile h1 .name-chinese { font-weight: 300; margin-left: .12em; }
+html[lang="zh-CN"] .profile h1 { font-weight: 300; }
