@@ -4,7 +4,7 @@ window.siteTranslations = {
   ".profile-links > a:first-child": "简历",
   ".profile-links .email-reveal": "邮箱",
   "#contact-label": "邮箱：",
-  "#contact-email .email-reveal": "点击显示",
+  "#contact-email .email-reveal": "还原邮箱",
   ".contact-line noscript": "请启用 JavaScript 查看邮箱，或查阅简历。",
   ".bio > p:nth-child(1)": "我目前在<a href=\"https://www.cqu.edu.cn/\">重庆大学</a>攻读风工程博士学位，导师为<a href=\"https://civil.cqu.edu.cn/info/1873/17337.htm\">李雨桐教授</a>。研究方向包括计算流体力学、钝体空气动力学和颗粒两相流。",
   ".bio > p:nth-child(2)": "此前，我在<a href=\"https://www.stdu.edu.cn/\">石家庄铁道大学</a>获得风工程硕士学位，导师为<a href=\"https://yjs.stdu.edu.cn/supervisor?code=8604707\">刘庆宽教授</a>和<a href=\"https://yjs.stdu.edu.cn/supervisor?code=020210729\">张珍教授</a>；在<a href=\"https://www.hebust.edu.cn/\">河北科技大学</a>获得土木工程学士学位。",

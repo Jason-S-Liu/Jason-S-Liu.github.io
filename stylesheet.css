@@ -138,3 +138,6 @@ html[lang="zh-CN"] .bio { text-align: left; }
 
 .nav-dropdown { min-width: 200px; }
 #journal-articles, #conference-proceedings, #internships, #reviewing, #conference-volunteer { scroll-margin-top: 24px; }
+
+#contact-email .revealed-email { color: var(--ink); }
+#contact-email .revealed-email:hover { color: var(--link); }
