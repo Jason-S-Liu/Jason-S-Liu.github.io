@@ -105,6 +105,7 @@
   BoldItalicFont=*-BoldIt,
   FontFace={l}{n}{Font=*-Light},
   FontFace={l}{it}{Font=*-LightIt},
+  FontFace={sb}{n}{Font=*-Semibold},
 ]
 \setsansfont{SourceSansPro}[
   Extension=.otf,
@@ -114,13 +115,15 @@
   BoldItalicFont=*-BoldIt,
   FontFace={l}{n}{Font=*-Light},
   FontFace={l}{it}{Font=*-LightIt},
+  FontFace={sb}{n}{Font=*-Semibold},
 ]
-\newfontfamily\roboto{texgyreheros}[
+\newfontfamily\roboto{Roboto}[
   Extension=.otf,
-  UprightFont=*-regular,
-  ItalicFont=*-italic,
-  BoldFont=*-bold,
-  BoldItalicFont=*-bolditalic,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  FontFace={l}{n}{Font=*-Regular},
 ]
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
@@ -216,7 +219,7 @@
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{6.7pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyleface}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries #1}}
@@ -228,7 +231,7 @@
       \color{text}{\acvSectionStringPlain}}}%
       {\color{text}\sectionstyleface{\@acvSectionTmp}}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
+\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfont\upshape\color{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -548,7 +551,7 @@
   }%
   \begin{minipage}[c]{\headerphotowidth}%
     \ifthenelse{\equal{\@photoalign}{left}}{\raggedright\drawphoto}{}
-  \end{minipage}
+  \end{minipage}%
   \begin{minipage}[c]{\headertextwidth}
     \ifthenelse{\equal{#1}{L}}{\raggedright}{\ifthenelse{\equal{#1}{R}}{\raggedleft}{\centering}}
     \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%

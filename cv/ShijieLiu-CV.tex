@@ -1,26 +1,41 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[10pt, a4paper]{awesome-cv}
 
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.4cm, footskip=.5cm}
 
-\colorlet{awesome}{awesome-skyblue}
+\colorlet{awesome}{awesome-red}
 \setbool{acvSectionColorHighlight}{true}
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvHeaderSocialSep}{\enspace\textbar\enspace}
+\definecolor{referenceblue}{HTML}{0000FF}
+
+% Keep bibliography and project links visually consistent with the reference CV.
+\newcommand{\cvlink}[1]{%
+  \ifstrempty{#1}
+    {\textcolor{referenceblue}{[Link]}}
+    {\href{#1}{\textcolor{referenceblue}{[Link]}}}}
+\newcommand{\paperlink}[1]{%
+  \ifstrempty{#1}
+    {\textcolor{referenceblue}{[Paper]}}
+    {\href{#1}{\textcolor{referenceblue}{[Paper]}}}}
+\newcommand*{\sectionnotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\newcommand*{\publicationstyle}{\fontsize{10pt}{1em}\bodyfont\upshape\color{text}}
+\newcommand*{\publicationtitle}[1]{{\fontseries{sb}\selectfont #1}}
+\newcommand*{\equalcontrib}{\textsuperscript{*}}
+\newcommand*{\correspondingauthor}{\textsuperscript{\textdagger}}
+\newcommand*{\cvsectionwithnote}[2]{%
+  \vspace{\acvSectionTopSkip}
+  \sectionstyle{#1}\hspace{0.4em}\sectionnotestyle{#2}
+  \phantomsection
+  \color{sectiondivider}\vhrulefill{0.9pt}}
 
 \name{Shijie}{Liu}
-\position{Doctoral Researcher{\enskip\cdotp\enskip}Computational Fluid Dynamics}
-\address{Chongqing University, Chongqing, China}
-
-\mobile{(+86) 151-3169-1003}
-\email{20241601053@stu.cqu.edu.cn}
-\homepage{shijieliu.com}
+\email{jasonliu@cqu.edu.cn}
+\homepage{https://shijieliu.com}
 \github{Jason-S-Liu}
-\orcid{0009-0000-5048-2536}
-\extrainfo{Research: bluff-body aerodynamics, particle-laden flows, reduced-order modeling}
-
-\quote{Mechanism-driven CFD for particle-laden bluff-body wakes.}
+% Replace the empty first argument with the Google Scholar profile ID.
+\googlescholar{}{Google Scholar}
 
 \begin{document}
 
@@ -33,10 +48,12 @@
 
 \input{sections/education.tex}
 \input{sections/research.tex}
-\input{sections/projects.tex}
-\input{sections/skills.tex}
 \input{sections/honors.tex}
-\input{sections/activities.tex}
 \input{sections/publications.tex}
+\input{sections/projects.tex}
+\input{sections/academic_services.tex}
+\input{sections/skills.tex}
+\input{sections/invited_talks.tex}
+\input{sections/press_coverage.tex}
 
 \end{document}
