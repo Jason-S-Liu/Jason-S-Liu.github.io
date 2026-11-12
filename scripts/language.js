@@ -16,7 +16,7 @@
   const navigation = document.querySelector('nav');
   const portrait = document.querySelector('.portrait');
   const englishDescription = document.querySelector('meta[name="description"]').content;
-  const chineseDescription = document.querySelector('meta[name="description"]').dataset.zh || '刘士杰（Shijie / Jason Liu）——计算流体力学、钝体空气动力学与颗粒两相流研究。';
+  const chineseDescription = document.querySelector('meta[name="description"]').dataset.zh || '刘士杰——颗粒两相流与高性能计算研究：惯性颗粒输运与聚集、GPU 加速模拟及 iFlowX 求解器开发。';
 
   const chinesePapers = ['j1', 'j2', 'c1', 'c2', 'c3', 'coal-shed-2024'];
   const englishTitle = document.title;
