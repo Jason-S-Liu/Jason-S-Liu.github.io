@@ -7,6 +7,7 @@ window.siteTranslations = {
   "#profile-intro": "我目前在<a href=\"https://www.cqu.edu.cn/\">重庆大学</a>攻读风工程博士学位，导师为<a href=\"https://civil.cqu.edu.cn/info/1873/17337.htm\">李雨桐教授</a>。",
   "#profile-background": "此前，我在<a href=\"https://www.stdu.edu.cn/\">石家庄铁道大学</a>获得风工程硕士学位，导师为<a href=\"https://yjs.stdu.edu.cn/supervisor?code=8604707\">刘庆宽教授</a>和<a href=\"https://yjs.stdu.edu.cn/supervisor?code=020210729\">张珍教授</a>；在<a href=\"https://www.hebust.edu.cn/\">河北科技大学</a>获得土木工程学士学位。",
   "#research-interest": "<strong>研究兴趣：</strong><u>高性能计算</u>、<u>颗粒两相流</u>与 <u>AI for Fluids</u> 的交叉研究。",
+  "#research-question": "<strong>研究问题：</strong>如何结合<u>高性能计算</u>与 <u>AI 方法</u>，揭示<u>湍流中惯性颗粒的输运与聚集机制</u>？",
   "#news-heading": "最新动态",
   "#publications-heading": "学术论文",
   "#education-heading": "教育经历",
