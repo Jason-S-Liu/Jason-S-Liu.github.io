@@ -58,9 +58,9 @@ Google can take days to weeks to show a new site in search results.
 
 ## Publications
 
-Each publication in `index.html` has a stable anchor, publisher link, and (when supplied) a local PDF link. PDF filenames containing Chinese characters or spaces are URL-encoded. `images/publications/` contains selected core framework and result figures rendered directly from regions of the supplied PDFs; `data/bibtex/` contains downloadable citations. Keep each inline citation and its `.bib` file in sync. The expandable abstract panels reproduce the English abstracts from the supplied PDFs, with line wrapping and PDF extraction artifacts normalized. J2 was transcribed from the PDF because its text layer fragments English words. All nine listed publications now have local PDF links and core figure previews.
+Each publication in `index.html` has a stable anchor, publisher link, and (when supplied) a local PDF link. PDF filenames containing Chinese characters or spaces are URL-encoded. `images/publications/` contains selected core framework and result figures rendered directly from regions of the supplied PDFs; `data/bibtex/` contains downloadable citations. Keep each inline citation and its `.bib` file in sync. The expandable abstract panels reproduce the English abstracts from the supplied PDFs, with line wrapping and PDF extraction artifacts normalized. J2 was transcribed from the PDF because its text layer fragments English words. All six listed publications now have local PDF links and core figure previews.
 
-The unnumbered coal-shed PDF is a separate 2024 journal publication, distinct from the C1 conference manuscript. J1 is listed with its formal 2024 publication year according to the PDF.
+The unnumbered coal-shed PDF is a separate 2024 journal publication, distinct from the C1 conference manuscript.
 
 To regenerate publication figure previews, run `python3 scripts/render_publication_figures.py` with Poppler (`pdftoppm`) installed. The script records each source page, figure description, and crop coordinates; it does not redraw or alter scientific results.
 
@@ -68,7 +68,7 @@ To regenerate publication figure previews, run `python3 scripts/render_publicati
 
 The top-right English / 中文 controls switch the interface and remember the preference in local storage. `?lang=zh` and `?lang=en` take priority and can be shared as direct links. English is the default and the no-JavaScript fallback.
 
-Edit English content in `index.html` and Chinese interface content in `scripts/translations.js`. `scripts/language.js` applies translations without resetting open abstracts or the revealed email. In Chinese mode, the heading shows 刘士杰 and the six Chinese publications use their original Chinese titles, author names, venues, and abstracts from the supplied PDFs. J2’s Chinese abstract is transcribed from its first page because of the fragmented text layer. The three English publications stay in English. English mode restores the existing English presentation; BibTeX and PDF downloads remain unchanged.
+Edit English content in `index.html` and Chinese interface content in `scripts/translations.js`. `scripts/language.js` applies translations without resetting open abstracts or the revealed email. In Chinese mode, the heading shows 刘士杰 and the four Chinese publications use their original Chinese titles, author names, venues, and abstracts from the supplied PDFs. J2’s Chinese abstract is transcribed from its first page because of the fragmented text layer. The two English publications stay in English. English mode restores the existing English presentation; BibTeX and PDF downloads remain unchanged.
 
 ## Blog and appearance
 

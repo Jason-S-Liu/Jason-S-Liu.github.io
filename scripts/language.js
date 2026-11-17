@@ -18,7 +18,7 @@
   const englishDescription = document.querySelector('meta[name="description"]').content;
   const chineseDescription = document.querySelector('meta[name="description"]').dataset.zh || '刘士杰——高性能计算、颗粒两相流与 AI for Fluids 的交叉研究。';
 
-  const chinesePapers = ['j1', 'j2', 'c1', 'c2', 'c3', 'coal-shed-2024'];
+  const chinesePapers = ['j2', 'c1', 'c2', 'coal-shed-2024'];
   const englishTitle = document.title;
   function setLanguage(language, save = false) {
     const zh = language === 'zh';
